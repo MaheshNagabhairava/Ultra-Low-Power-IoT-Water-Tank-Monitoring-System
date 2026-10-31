@@ -1,4 +1,4 @@
-# Ultra-Low-Power Autonomous IoT Water Tank Telemetry System
+# Ultra-Low-Power Autonomous IoT Water Tank Monitoring System
 
 An autonomous, battery-operated IoT liquid level monitoring system engineered with an ESP8266 (ESP-12F). The device operates on an ultra-low-power hardware architecture utilizing a custom capacitive differentiator circuit to convert static float-switch state changes into hardware reset pulses. Achieving a deep-sleep current draw of $<20\,\mu\text{A}$ and an active operational window of under $1.5\text{ seconds}$ per event, the system delivers multi-month deployment life on a single 18650 Li-ion cell.
 
