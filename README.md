@@ -7,7 +7,7 @@ An autonomous, battery-operated IoT liquid level monitoring system engineered wi
 ## Key Highlights & Performance Metrics
 
 * **Power Profile:** $<20\,\mu\text{A}$ sustained deep-sleep current; operates for multi-month intervals on a standard $2600\text{ mAh}$ 1S 18650 Li-ion battery.
-* **Transient Execution Duration:** $\approx 1.2\text{ to }1.5\text{ seconds}$ total active run time from physical switch contact to deep sleep re-entry.
+* **Transient Execution Duration:** $\approx 3\text{ to }5\text{ seconds}$ total active run time from physical switch contact to deep sleep re-entry.
 * **Hardware Pulse-Wake Architecture:** Dual-channel capacitive differentiator network ($1\,\mu\text{F}\text{ MLCC} + 100\text{ k}\Omega / 10\text{ k}\Omega\text{ pull-ups}$) converts sustained reed closures to a single $\approx 11\text{ ms}$ negative pulse, preventing continuous reset loops without requiring continuous MCU polling.
 * **Overvoltage Protection:** Fast-switching 1N5819 Schottky diode clamping network shunts positive transient inductive/capacitive spikes ($>3.3\text{V}$) into the power rail upon switch release.
 * **Accelerated Cloud Association:** Firmware employs RTC User Memory caching for Wi-Fi channel and BSSID parameters, reducing network connection latency from $\sim 3\text{--}5\text{ seconds}$ down to $250\text{--}350\text{ ms}$.
