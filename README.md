@@ -170,21 +170,6 @@ WiFi.begin(STASSID, STAPSK, rtcData.channel, rtcData.bssid, true);
 
 ---
 
-## Power Budget Analysis
-
-Assuming an average of **4 triggers per day** (two fill and two drain events):
-
-| Operational State | Current Draw ($I$) | Duration ($t$) | Daily Energy Consumption ($Q = I \times t$) |
-| :--- | :--- | :--- | :--- |
-| **Deep Sleep (Idle)** | $18\,\mu\text{A}$ | $86,394\text{ s}$ ($23.998\text{ hrs}$) | $0.432\text{ mAh}$ |
-| **Active Boot & TLS Post** | $120\text{ mA}$ avg ($380\text{ mA}$ peak) | $1.5\text{ s} \times 4 = 6.0\text{ s}$ | $0.200\text{ mAh}$ |
-| **Total Daily Consumption** | — | — | **$\approx 0.632\text{ mAh / day}$** |
-
-$$\text{Projected Runtime} = \frac{2600\text{ mAh} \times 0.80\text{ (Derating)}}{0.632\text{ mAh / day}} \approx \mathbf{3290\text{ Days (Multi-Year Potential)}}$$
-*(Actual battery life is governed primarily by 18650 electrochemical self-discharge rates rather than operational load).*
-
----
-
 ## Repository Structure
 
 ```text
